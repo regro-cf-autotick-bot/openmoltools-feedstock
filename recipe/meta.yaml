@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.14
     - numpydoc
     - scipy
-    - openmm >=7.0.1
+    - openmm >=7.0.1, <=7.5.1
     - ambertools >=19
     - pytables
 
@@ -57,3 +57,5 @@ extra:
   recipe-maintainers:
     - jaimergp
     - jchodera
+    - mikemhenry
+    - ijpulidos
