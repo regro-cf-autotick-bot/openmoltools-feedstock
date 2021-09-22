@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv --no-deps"
 
 requirements:
@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.14
     - numpydoc
     - scipy
-    - openmm >=7.0.1, <=7.5.1
+    - openmm
     - ambertools >=19
     - pytables
 
