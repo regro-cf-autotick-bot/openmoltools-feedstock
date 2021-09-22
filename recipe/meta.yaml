@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.14
     - numpydoc
     - scipy
-    - openmm >=7.6
+    - openmm
     - ambertools >=19
     - pytables
 
